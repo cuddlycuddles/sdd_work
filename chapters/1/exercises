@@ -20,4 +20,5 @@ and did not exist within the program
 6. The program now prints out 10 empty rows, because the format character inside the double quotation marks 
 specified a single character, but the additional argument provided to the printf statement was the
 number 1, which is not a character, but an integer. However, the program would've printed out 10 rows
-of 10 one's if the one was enclosed by single quotation marks, as it would be a string in that case
+of 10 one's if the one was enclosed by single quotation marks, as it would be a string in that case, 
+OR if the format character inside the double quotation marks was "%i", as it would expect an integer

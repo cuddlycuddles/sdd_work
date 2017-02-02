@@ -5,8 +5,24 @@
 
 2. The compiler compiles the source code and makes it understandable for the computer, in binary
 
-3.
+3. Steps in the Program Development Cycle:
 - Determine objectives
 - Determine methods you want to use in the program
 - Create the program to accomplish objectives and fulfil requirements
 - Run program to see results
+
+4. To compile a program called program1.c, you need to enter program1
+
+5. Although compiling and linking are mentioned as two separate steps, compilers usually do both as one step.
+
+6. The extension you should have for your C source files is .c
+
+7. FILENAME.TXT is not a valid name for a C source file
+
+8. If you executed a program that you compiled and it doesn't work as you expected, you should fix any errors in the source
+code
+
+9. Machine language is the sequence of 0's and 1's that computers can understand, use and act upon
+
+10. The linker combines the object code produced when your source code was compiled with the boject code from the function
+library to create the final executable program. It allows the use of predefined functions such as printf()

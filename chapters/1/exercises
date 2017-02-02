@@ -1,0 +1,23 @@
+1. The object file does not look like the source file, as it is compiled to be understandable for the machine.
+
+2. The program: 
+- prompts the user for a radius
+- scans the user input and stores it into the radius variable.
+- calculates the area of a circle based on the radius the user specified
+- outputs the area of the circle (only to integer precision)
+
+3. The program:
+- uses a for loop that uses a nested for loop to print out 10 x's, then prints out a newline character
+- the outer for loop is executed 10 times
+- 10 rows of 10 x's are outputted
+
+4. Line 3 generates an error message, because a semi-colon took the place of the opening curly brace 
+for the int main (void) function
+
+5. Line 6 generates an error message, because it called the do_it function, which was never declared 
+and did not exist within the program
+
+6. The program now prints out 10 empty rows, because the format character inside the double quotation marks 
+specified a single character, but the additional argument provided to the printf statement was the
+number 1, which is not a character, but an integer. However, the program would've printed out 10 rows
+of 10 one's if the one was enclosed by single quotation marks, as it would be a string in that case

@@ -1,0 +1,23 @@
+1. The term for a group of one or more C statements enclosed in braces is a block
+
+2. The main component must be present in every C program
+
+3. Through // (single line comment) or /* */ (multi line comment). They are used to improve readibility, especially to other
+readers, and to allow for easier maintenance of your code
+
+4. A function, which can accept arguments, executes lines of code
+
+5. There are library functions and user-defined functions. Library functions are pre-defined functions (such as
+printf and scanf), which can be utilised if you include the library it is from (#include <stdio.h>).
+User-defined functions are functions defined inside the source file by the user
+
+6. #include is used to include a library for functions, such as #include <stdio.h> for printf and scanf
+
+7. Comments can be nested, however it is not recommended
+
+8. Comments can be longer than one line if you use the multiline comment or multiple single line comments
+
+9. Another name for include files are header files
+
+10. An include file is a separate disk file that contains information that can be used by your program or the compiler
+

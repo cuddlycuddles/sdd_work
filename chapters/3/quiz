@@ -1,0 +1,43 @@
+1. The difference between an integer variable and a floating-point variable is that:
+- integer variables are integers
+- floating point variables contain values after the decimal point
+- a conversion from a float to an integer truncates the values after the decimal point, leaving a whole number
+
+2. Floating-point variables require 4 bytes and only have a precision up to 7 digits, whilst double-precision floating-point
+   variables require 8 bytes and have precision up to 19 digits
+
+3. Five rules that are always true when allocating size for variables:
+- the size of a char is 1 byte
+- the size of a short is less than or equal to the size of an int
+- the size of an int is less than or equal to the size of a long
+- the size of an unsigned is equal to the size of an int
+- the size of a float is less than or equal to the size of a double
+
+4. Two advantages of using a symbolic constant instead of a literal constant:
+- as it is a convention to place symbolic constants at the top of the source code, near the header files,
+  it will be easier to locate and alter the symbolic constant
+- if you need to alter the symbolic constant, you only need to alter the online where it is defined
+
+5. Two methods for defining a symbolic constant named MAXIMUM that has a value of 100:
+- #define MAXIMUM 100
+- const int MAXIMUM = 100;
+
+6. Characters allowed in C variable names:
+- Underscore(_)
+- Capital Letters ( A – Z )
+- Small Letters ( a – z )
+- Digits ( 0 – 9 )
+
+7. Guidelines you should follow in creating names for variables and constants:
+- use camelcase e.g. thisIsCamelCase
+- use lowercase for variables and uppercase for constants (for distinction)
+- do not use an underscore as the first character in a variable
+- variables cannot start with a number
+- C is case sensitive, so be wary that two variables with the same name but different case are NOT the same
+- C keywords cannot be used as variable names (such as printf, int etc.)
+
+8. The difference between a symbolic and literal constant is that:
+- symbolic constants are defined and declared beforehand (e.g. #define RAWRXD 21)
+- literal constants are used on the spot and to be altered, you have to change all occurrences of the literal constant
+
+9. The minimum value that a type int variable can hold is -2,147,483,647

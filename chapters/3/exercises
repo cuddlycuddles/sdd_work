@@ -1,0 +1,13 @@
+1, 2 & 3
+a. int age;
+b. int friends;
+c. double r;
+d. long int annualSalary;
+e. float cost;
+f. int maxGrade = 100;
+g. char initial1;
+h. float temp;
+i. long int netWorth;
+j. unsigned long long dToStar;
+
+4. c, e, g, h, i, j (a bit long though)

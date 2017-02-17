@@ -1,0 +1,77 @@
+1. It works, output is the larger number of two inputted numbers.
+
+2.
+#include <stdio.h>
+int x, y;
+
+int main ()
+{
+	printf ("\nEnter two numbers: ");
+	scanf ("%i %i", &x, &y);
+	
+	printf ("\n%i is bigger\n", x > y ? x : y);
+	
+	return 0;
+}
+
+3. 
+// demonstrates unary operator prefix and postfix modes
+
+#include <stdio.h>
+
+int a, b;
+
+int main (void)
+{
+	// initializes both a and b to 0
+	a = b = 0;
+	
+	int i = 0; // used for for loop
+	
+	// prefix incrementation for b, postfix incrementation for a
+	printf ("Count up xD\n");
+	printf ("Post\tpre\n");
+	for ( i = 0; i < 5; ++i )
+	{
+		printf ("%i		%i\n", a++, ++b);
+	}
+	
+	printf ("\nCurrent values of a and b:\n");
+	printf ("%i		%i\n\n", a, b);
+	
+	return 0;
+}
+
+4. 
+if ( x >= 1 && x <= 20)
+		y = x;
+
+5. 
+(x >= 1 && x <= 20) ? y = x : ;
+
+6. 
+if (x < 1 || x > 10)
+  statement;
+// this book has unappealing errors, x can't be both at the same time but whatever
+
+7. a = 7, b = 0, c = 9, d = 1, x = 5
+
+8. a is true, b is false, c is wrong, d is true
+
+9. 
+if (age >= 21 && age <=65)
+  printf ("Person is legally an adult but not yet a senior citizen. You have many years to come so live life to its fullest.");
+
+10. 
+// a program with no problems xD
+
+#include <stdio.h>
+
+int x = 1;
+
+int main (void)
+{
+	x == 1 ? printf ("x equals 1\n") : printf ("x does not equal 1\n");
+	
+	return 0;
+}

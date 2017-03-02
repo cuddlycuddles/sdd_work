@@ -1,0 +1,18 @@
+1. long arr[51];
+2. arr[49] = 123456
+3. 100
+4. 11
+5. 50
+6. for (i = 1; i < 100; i += 3)
+7. while (i < 100) {
+    printf ("%i\n", i);
+    i += 3;
+    }
+8. do
+   {
+      printf ("%i\n", i);
+      i += 3;
+   }
+   while (i < 100);
+9. It is an infinite loop, as record never increases and stays as 0.
+10. semi colon at the end of the for loop

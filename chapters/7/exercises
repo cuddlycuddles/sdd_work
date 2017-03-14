@@ -1,0 +1,166 @@
+1.
+printf ("\n");
+puts();
+
+2.
+scanf ("%c %i %c", &char1, &num, &char2);
+
+3. 
+scanf ("%i", &num);
+printf ("%i\n", num);
+
+4. 
+do {
+  scanf ("%i", &num);
+  printf ("%i", num);
+}
+while (num % 2 != 0); // scan and print until even number is inputted
+
+5.
+int numOfInputs = 0; // counter for inputs
+int numOfEvens = 0; // counter for number of even inputs
+int inputArray[50]; // array to store inputs
+do {
+  scanf ("%i", &num);
+  printf ("%i", num);
+  inputArray[numOfInputs] = num; // store input
+  ++numOfInputs; // increase number of inputs
+  if (num % 2 == 0) {
+    ++numOfEvens; // if even number is inputted, increase number of even inputs
+  }
+}
+while (num != 99 || numOfEvens == 6); // continue scanning and printing until 99 or 6 even values are entered
+
+6.
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+
+void scanAndPrintInput (void);
+
+int main (void) {
+	scanAndPrintInput();
+	return 0;
+}
+
+void scanAndPrintInput (void) {
+	int numOfInputs = 0; // counter for inputs
+	int numOfEvens = 0; // counter for number of even inputs
+	int inputArray[50]; // array to store inputs
+	int num;
+	int i = 0; // used for looping through array
+	int end = FALSE;
+	
+	do
+	{
+		scanf ("%i", &num);
+		inputArray[numOfInputs] = num; // store input
+		++numOfInputs; // increase number of inputs
+		if (num % 2 == 0) {
+			++numOfEvens; // if even number is inputted, increase number of even inputs
+		}
+		
+		if (num == 99 || numOfEvens == 6) { // flag for end is true if 6 even values or 99 have been entered
+			end = TRUE;
+		}
+	}
+	while (end == FALSE); // continue scanning and printing until program should end
+	
+	while (i < numOfInputs) {
+		printf ("%i\t", inputArray[i]);
+		++i;
+	}
+	
+	printf ("\n");
+}
+
+7. 
+Nested double quotation marks. Should either use single apostrophes or \" to represent double quotation marks
+
+8.
+Infinite loop: the while loop will never end as the condition of "answer < 1" will always be satisfied
+The printf statement within the while loop is incorrect (missing double quotation marks)
+The scanf statement within the while loop is incorrect (missing address operator, scanned value will not be assigned)
+
+9. dont want to read the book
+
+10.
+#include <stdio.h>
+
+int main (void) {
+  double f1, f2;
+  printf ("Enter two floats: ");
+  scanf ("%lf %lf", &f1, &f2);
+  printf ("The product of %lf and %lf is %lf\n", f1, f2, f1 * f2);
+  return 0;
+}
+
+11.
+#include <stdio.h>
+
+int main (void) {
+  int num; // user input
+  int sum = 0; 
+  int i; // used in loop 
+  
+  printf ("Enter ten numbers floats: ");
+  
+  for (i = 0; i < 10; ++i) {
+    scanf ("%i", &num);
+    sum += num;
+  }
+  
+  printf ("The sum of those ten numbers you inputted is %i\n", sum);
+  return 0;
+}
+
+12. wow talk about beginner-friendly lol, just read chapter 8! bla bla bla! xD ok lol
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+
+void scanInputAndExtras (void);
+
+int main (void) {
+	scanInputAndExtras();
+	printf ("\n");
+	return 0;
+}
+
+void scanInputAndExtras (void) {
+	int inputArray[50]; // array to store inputs
+	int numOfInputs = 0; // counter for inputs
+	int end = FALSE; // flag to indicate when to stop scanning inputs
+	int i; // used for looping through array
+	int num; // user input
+	int smallest; // smallest value of array
+	int largest; // largest value of array
+	
+	do
+	{
+		scanf ("%i", &num);
+		inputArray[numOfInputs] = num; // store input
+		++numOfInputs; // increase number of inputs
+		if (num == 0 || numOfInputs == 50) { // flag for end is true if 0 is entered or end of array reached
+			end = TRUE;
+		}
+	}
+	while (end == FALSE); // continue scanning and printing until program should end
+	
+	smallest = inputArray[0]; // initialise to first array element
+	largest = inputArray[0]; // initialise to first array element
+	
+	for (i = 1; i < numOfInputs; ++i) { // loop to calculate smallest number
+		if (inputArray[i] < smallest) {
+			smallest = inputArray[i]; // if there is a smaller number than the current smallest, update smallest
+		}
+		
+		if (inputArray[i] > largest) {
+			largest = inputArray[i]; // if there is a larger number than the current largest, update largest
+		}
+	}
+	
+	printf ("Smallest is %i, largest is %i\n", smallest, largest);
+}

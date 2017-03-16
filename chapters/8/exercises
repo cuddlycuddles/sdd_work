@@ -1,0 +1,89 @@
+1.
+#include <stdio.h>
+
+#define size 1000
+
+int array[size], array2[size], array3[size];
+
+2.
+int array[10];
+for (int i = 0; i < 10; ++i) {
+	array[i] = 1;
+}
+
+3.
+int i;
+for (i = 0; i < 88; ++i) {
+	array[i] = 88;
+}
+
+4.
+int i, j;
+for (i = 0; i < 12; ++i) {
+	for (j = 0; j < 10; ++j) {
+		array[i][j] = 0;
+	}
+}
+
+5.
+it sets array elements that don't exist. such as array[0][8].
+in the for loop, the x condition should be less than 10,
+and the y condition should be less than 3
+
+6.
+array[10] doesn't exist
+
+7.
+#include <stdio.h>
+#include <time.h>
+
+srand (time(NULL));
+
+int main (void) {
+  int array[5][4];
+  int i, j;
+  
+  for (i = 0; i < 5; ++i) { // each row
+    for (j = 0; j < 4; ++j) { // each column
+      array[i][j] = (rand % 10) + 1; // make random number between 1 and 10
+    }
+  }
+  
+  for (i = 0; i < 5; ++i) { 
+    for (j = 0; j < 4; ++j) { 
+      printf ("%i ", array[i][j]);
+    }
+    
+    printf ("\n");
+  }
+  
+  return 0;
+}
+
+8.
+sorry you're on your own for this one i don't want to copy and read
+
+9.
+int array[10];
+
+int i;
+for (i = 0; i < 10; ++i) {
+  array[i] = i;
+}
+
+for (i = 0; i < 10; ++i) {
+  printf ("array[%i] = %i\n", i, array[i]);
+}
+
+10.
+int array2[10];
+int j;
+
+for (j = 0; j < 10; ++j) {
+  array2[j] = array[j] + 10;
+}
+
+for (j = 0; j < 10; ++j) {
+  printf ("array2[%i] = %i\n", j, array[j]);
+}
+  

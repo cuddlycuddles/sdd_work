@@ -1,0 +1,12 @@
+1.
+char * char_ptr;
+2.
+int cost;
+int *p_cost = &cost;
+3.
+direct: cost = 100;
+indirect: *p_cost = 100;
+4.
+i dont no xD
+5.
+addArrays (function (int
